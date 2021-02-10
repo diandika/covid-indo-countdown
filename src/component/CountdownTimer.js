@@ -1,19 +1,14 @@
 import React, {Component} from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './timer.css';
+import '../css/timer.css';
 
 const countdownTo = "Jan 1, 2031 00:00:00";
 
 class CountdownTimer extends Component{
 
-    constructor(props) {
-        super(props);
-    }
-
     componentDidMount() {
         var countdownTime = new Date(countdownTo).getTime();
 
-        var x = setInterval(() => {
+        setInterval(() => {
             var now = new Date().getTime();
 
             var dist = countdownTime - now;
