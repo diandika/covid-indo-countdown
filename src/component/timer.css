@@ -1,0 +1,27 @@
+.timer-counter {
+    padding-top: 10px;
+    margin: 10px auto;
+    padding-bottom: 10px;
+}
+
+.timer{
+    background: mediumblue;
+    border-radius: 5px;
+    padding: 10px 0;
+    box-shadow: black 0 2px 4px -1px;
+    color: #eeeeee;
+}
+
+@media (max-width: 767px) {
+    .timer-sm{
+        margin: 5px;
+    }
+}
+
+.day-timer, .hour-timer, .minute-timer, .second-timer{
+    font-size: 5em;
+}
+
+.timer-label{
+    font-size: 2em;
+}
